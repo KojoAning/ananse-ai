@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  /* background-color: red; */
+  width: 350px;
+  gap: 20px;
+  
+    border-right: 2px solid #ffffff; /* Adjust the border color and size as needed */
+    padding-right: 40px; /* Adjust the padding as needed */
+    /* padding-left: 40px; */
+  }
+  
+  .cardContainer:last-child {
+    border-right: none; /* Remove border for the last element */
+  }
+  
+  .cardImage {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .cardTitle {
+    /* background-color: red; */
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    /* align-items: left; */
+    justify-content: right;
+  }
+  .description {
+    font-size: 12px; /* Adjust the font size as needed */
+    padding-bottom: 10px;
+    font-style: italic;
+  }

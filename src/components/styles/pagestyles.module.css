@@ -1,0 +1,208 @@
+
+.home {
+    max-height: 1440px;
+    background: purple contain no-repeat right;
+  }
+
+  .gridcontent {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 4px; 
+  }
+  .silverrobot {
+    /* background-color: blue; */
+    text-align: right; /* Align inline or inline-block elements to the right */
+    
+  }
+  
+  .landingContent {
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-top: 11px;
+    
+  }
+
+  .subtitle {
+    color: #BAA0BB;
+    /* background-color: black; */
+    font-size: 25px;
+    margin-bottom: 100px;
+    width: 780px;
+    text-align: center;
+  }
+
+  .my6 {
+    margin-bottom: 23px
+  }
+  
+  .ltext {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 15px
+
+  }
+  
+  .landing-image {
+    width: 780px;
+    height: 400px;
+  }
+  
+  /* Features Section */
+  .features {
+    background: lightpurple;
+    height: 100%;
+    padding: 36px 12px;
+  }
+  
+  .features-title {
+    font-size: 3xl;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .about {
+    /* background-color:black; */
+    background-image: url('./adinkra.png');
+    /* background-size: '75% 50%'; */
+    
+    background-repeat: no-repeat;
+    background-size: 50% 60%;
+  
+    
+    padding: 50px 250px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+  }
+  
+  .about > div {
+    /* background-color: black; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about > div > h1 {
+    font-size: 27px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+  }
+  
+  .about > div > p {
+    width: 2/3;
+    min-width: 500px;
+    font-size: 18px;
+    color: #BAA0BB;
+    margin-bottom: 102px;
+  }
+  
+  .about > div:last-child {
+    margin-bottom: 0; /* Remove margin for the last div */
+  }
+  
+  .about > div > h1 + p {
+    margin-top: 0; /* Remove top margin for paragraphs following an h1 */
+  }
+  
+  .about > div > h1:not(:first-child) {
+    margin-top: 52px; /* Add margin-top for h1 elements that are not the first child */
+  }
+  
+
+  .profilegrid {
+    /* background-color: red; */
+    display: grid;
+    gap: 1rem;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minmax value as needed */
+  }
+  
+
+  .Testimonialgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* Adjust the gap as needed */
+    margin-top: 10px; /* Adjust the margin as needed *//* Adjust the minmax value as needed */
+  }
+
+
+  .testcontainer {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .testimage {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .testtitle {
+    font-size: 2xl; /* Adjust the font size as needed */
+  }
+
+
+  .testimonial {
+    /* background-color:black; */
+    background-image: url('./adinkra2.png');
+    background-position:  bottom right;
+    /* background-size: '75% 50%'; */
+    
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+  
+    
+    padding: 100px 250px;
+    /* margin-bottom: 52px; */
+  }
+  
+  .testimonial > div {
+    /* background-color: black; */
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .testimonial > div > h1 {
+    font-size: 27px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+  }
+  
+  .testimonial > div > p {
+    width: 2/3;
+    min-width: 500px;
+    font-size: 18px;
+    color: #BAA0BB;
+    margin-bottom: 102px;
+  }
+  
+  .testimonial > div:last-child {
+    margin-bottom: 0; /* Remove margin for the last div */
+  }
+  
+  .testimonial > div > h1 + p {
+    margin-top: 0; /* Remove top margin for paragraphs following an h1 */
+  }
+  
+  .testimonial > div > h1:not(:first-child) {
+    margin-top: 52px; /* Add margin-top for h1 elements that are not the first child */
+  }
+  
