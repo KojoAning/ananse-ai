@@ -1,20 +1,20 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from '../Navbar.js';
 import { Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Button from './Button';
-import Header from './Header';
-import styles from '../components/styles/pagestyles.module.css'
+import Button from '../Button.js';
+import Header from '../Header.js';
+import styles from '../styles/pagestyles.module.css'
 import imag1 from '../assets/images/img1.png'
 import silverrobot from '../assets/images/silverrobot.png'
 // import { profiles } from './profile';
-import RecommendationCard from './Recommendationcard.js';
-import { profiles } from './profiles.ts';
-import ProfileCard from './ProfileCard.js';
-import footer from './footer.js';
-import { recommendations } from './recommendations.ts';
+import RecommendationCard from '../Recommendationcard.js';
+import { profiles } from '../profiles.ts';
+import ProfileCard from '../ProfileCard.js';
+import footer from '../footer.js';
+import { recommendations } from '../recommendations.ts';
 
-import Pagefooter from './footer.js';
+import Pagefooter from '../footer.js';
 
 function Mainpage() {
   return (
@@ -36,6 +36,7 @@ function Mainpage() {
           <Link href="/login">
             <Button>Get Started</Button>
           </Link>
+          
          </div> 
         </div>
         <div className={styles.silverrobot}>

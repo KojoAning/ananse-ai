@@ -4,7 +4,7 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import styles from './styles/header.module.css'
-import logo from '../assets/images/logo.png'
+import logo from './assets/images/logo.png'
 
 const links = ["home", "about", "features", "pricing",];
 
