@@ -1,7 +1,7 @@
 
-import esther from '../assets/images/esther.png'
-import michael from '../assets/images/michael.png'
-import kweku from '../assets/images/kweku.png'
+import esther from './assets/images/esther.png'
+import michael from './assets/images/michael.png'
+import kweku from './assets/images/kweku.png'
 
 export interface recommendationInterface {
   name: string;

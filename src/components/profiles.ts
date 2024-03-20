@@ -1,6 +1,6 @@
-import beginImage from '../assets/images/begin.png';
-import interImage from '../assets/images/inter.png'
-import profImage from '../assets/images/prof.png'
+import beginImage from './assets/images/begin.png';
+import interImage from './assets/images/inter.png'
+import profImage from './assets/images/prof.png'
 
 export interface profileInterface {
   name: string;

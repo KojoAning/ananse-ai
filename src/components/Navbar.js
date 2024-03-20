@@ -1,7 +1,7 @@
 // Navbar.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import image from '../assets/images/logo.png'
+import image from './assets/images/logo.png'
 import { click } from '@testing-library/user-event/dist/click';
 
 function Navbar() {

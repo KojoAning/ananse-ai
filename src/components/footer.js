@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./styles/footer.module.css"
 import { Image } from 'react-bootstrap';
-import image from '../assets/images/logo.png'
+import image from './assets/images/logo.png'
 import Divcontent from './divcontent';
 import { divcontents } from './divcontents.ts';
 

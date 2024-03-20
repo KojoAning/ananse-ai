@@ -1,19 +1,20 @@
 // Navbar.js
 import React, { useState } from 'react';
 import Header from '../Header';
-import styles from '../styles/loginpage.module.css'
-import image from '../assets/images/group15.png'
+import styles from '../styles/signinpage.module.css'
+import image from '../assets/images/group13.png'
 import Logincomponents from '../Logincomponents';
 import { Button } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
+import Signupcomponents from '../Signupcomponents';
 
-function Login() {
+function Signup() {
   return(
     <div>
         <Header/>
         <div className={styles.container}>
             <div className={styles.leftcontent}><img className={styles.image} src={image}></img></div>
-            <div className={styles.rightcontent}><Logincomponents/></div>
+            <div className={styles.rightcontent}><Signupcomponents/></div>
           
         
         </div>
@@ -25,4 +26,4 @@ function Login() {
   
 }
 
-export default Login;
+export default Signup;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar.js';
 import { Image } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Button from '../Button.js';
 import Header from '../Header.js';
 import styles from '../styles/pagestyles.module.css'
@@ -13,10 +13,19 @@ import { profiles } from '../profiles.ts';
 import ProfileCard from '../ProfileCard.js';
 import footer from '../footer.js';
 import { recommendations } from '../recommendations.ts';
-
+import { useNavigate } from 'react-router-dom';
 import Pagefooter from '../footer.js';
+import Login from './login.js';
+
+
 
 function Mainpage() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    // Redirect to the login page when the button is clicked
+    navigate('/login');
+  };
   return (
     <main className="text-white m-auto">
         <section id="home" className=" max-h-[1440px] bg-purple bg-[url('/flower.svg')] bg-contain bg-right bg-no-repeat ">
@@ -33,9 +42,9 @@ function Mainpage() {
           <p className={styles.my6}>
             Unlock Your Potential in Robotics with Personalized Tutoring
           </p>
-          <Link href="/login">
-            <Button>Get Started</Button>
-          </Link>
+          <NavLink to="/login">
+            <Button>Get Started </Button>
+          </NavLink>
           
          </div> 
         </div>
@@ -86,8 +95,9 @@ and control.
   </div>
 </section>
 
-
+<Pagefooter/>
     </main>
+    
   );
 }
 
