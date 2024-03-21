@@ -8,6 +8,7 @@ import Pagefooter from './components/footer';
 import Login from './components/pages/login';
 import Signup from './components/pages/signup';
 import Dashboard from './components/pages/Dashboard';
+import TabbedInterface from './components/pages/Tabinterface';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/tabs" element={<TabbedInterface />} />
         
       </Routes>
      

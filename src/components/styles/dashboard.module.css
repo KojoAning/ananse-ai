@@ -113,7 +113,42 @@
   }
 
   .bottom{
-    height: 100vh;
+   
     width:100%;
     background-color: #E8D0A1;
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .lessoncard {
+  
+    height:250px;
+    width: 70vw;
+    background-color:#521254;
+    margin-bottom: 39px; 
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .lessoncontainer {
+    width: 75vw;
+    background-color: green;
+    padding-top: 40px;
+   
+  }
+
+  .lessoncardleft{
+    background-color: blue;
+    display: flex;
+    width: 50%;
+  }
+
+  .lessoncardright{
+    background-color: black;
+    width: 50%;
   }
