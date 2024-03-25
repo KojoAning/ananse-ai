@@ -1,17 +1,27 @@
 .continer{
-    height: 100vh;
+    height: auto;
+    width: 100vw;
+    /* color:aqua ; */
 }
 
 .topcontent {
-    height:75vh;
-    width: 100vw;
-    /* background-color: black; */
+    height:auto;
+    width: 100%;
+
+    /* padding-bottom: 50px; */
+   /* background-color: #A888A9;  */
 }
 
 .topdecoration {
-    height: 55vh;
-    background-image: url('../assets/images/Rectangle130.png');
+  background-image: url('../assets/images/Rectangle130.png');
     background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    height: 100%;
+    background-size: auto; 
+   
+    
+    /* background-color: green; */
     
 }
 
@@ -68,43 +78,61 @@
   }
   
   .subcontent {
+    
     display: flex;
-    height: 50vh;
-    align-items: center;
-    /* background-color: yellow; */
+   height: auto;
+   width: 100vw;
+    /* background-color: rgb(0, 45, 128); */
   }
 
   .leftcontent {
-    width: 50vw;
-    /* background-color: green; */
+    width:50%;
+    /* background-color: red; */
+    height: 70%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
   }
 
   .rightcontent {
-    padding-top: 40px;
-    width: 50vw;
-    height: 70vh;
-    /* background-color: green; */
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Arrange items in a column */
+    /* padding-top: 40px; */
+    width: 50%;
+    height: 60%;
+    /* background-color: rgb(75, 0, 128); */
+    font-size: 1.2vw;
+    display: flex; 
+    flex-direction: column; 
     align-items: center; 
   }
+
+  .activitybox{
+    height:4vw;
+    width: 10vh;
+    background-color: black;
+    gap: 20px;
+  }
+  
+  .img {
+    /* padding-top: 50px; */
+    height: 60%;
+    width: 40%;
+  }
+
+ 
   .test{
     /* background-color: red; */
     width: 100%;
-    height: 50vh;
+    height: auto;
     display: flex;
+    padding-top: 20;
     gap:50px; 
     justify-content:center;
     flex-direction: row; /* Arrange items in a column */
     align-items: center; 
+    padding-top: 2vh;
    
   }
 
-  .img {
-    padding-top: 50px;
-    height: 500px;
-    width: 400px;
-  }
 
   .progressbar{
     background-color: red;
@@ -116,39 +144,71 @@
    
     width:100%;
     background-color: #E8D0A1;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 5vw;
+    padding-left: 5vw;
     display: flex; 
     flex-direction: column;
   }
 
   .lessoncard {
   
-    height:250px;
-    width: 70vw;
+    height:auto;
+    width: 60vw;
     background-color:#521254;
-    margin-bottom: 39px; 
-    border-radius: 30px;
-    padding: 40px;
+    /* padding-right:10px; */
+    /* margin-bottom: 39px;  */
+    border-radius: 3vw;
+    /* padding: 40px; */
     display: flex;
+   
     flex-direction: row;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
 
   }
 
   .lessoncontainer {
     width: 75vw;
-    background-color: green;
+    /* background-color: green; */
     padding-top: 40px;
    
   }
 
   .lessoncardleft{
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
+    height: 100%;
+    font-size: 1vw;
     width: 50%;
+    flex-direction: column;
+    /* gap: 3vh; */
+    /* padding: 5% 10% 5% 2%; */
+    padding-top: 7%;
+    padding-left: 3%;
+    padding-right: 7%;
+    padding-bottom: 2px;
+    flex-grow: 1;
+    align-self: stretch;
+    
+    
   }
 
   .lessoncardright{
-    background-color: black;
-    width: 50%;
+    padding-right: 20px;
+    padding-bottom: 6px; 
+    flex-grow: 1;
+    /* background-color: black; */
+    border-radius: 30px;
+    width: 80%;
+    /* display: flex; */
+    height:120%;
+    background-image: url('../assets/images/ellipse24.png');
+    background-size: cover;
+    
+  }
+
+  .title {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 8%;
   }
