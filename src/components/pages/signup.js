@@ -13,7 +13,7 @@ function Signup() {
     <div>
         <Header/>
         <div className={styles.container}>
-            <div className={styles.leftcontent}><img className={styles.image} src={image}></img></div>
+            <div className={styles.leftcontent}><img  src={image} width='100%' height='90%' ></img></div>
             <div className={styles.rightcontent}><Signupcomponents/></div>
           
         

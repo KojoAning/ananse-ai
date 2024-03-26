@@ -16,6 +16,7 @@ import { recommendations } from '../recommendations.ts';
 import { useNavigate } from 'react-router-dom';
 import Pagefooter from '../footer.js';
 import Login from './login.js';
+import Button1 from '../Button1.js';
 
 
 
@@ -29,50 +30,49 @@ function Mainpage() {
   return (
     <main className="text-white m-auto">
         <section id="home" className=" max-h-[1440px] bg-purple bg-[url('/flower.svg')] bg-contain bg-right bg-no-repeat ">
-        <Header/>
-        <div className={styles.gridcontent}>
-        <div  className={styles.landingContent} >
-          <Image width={700} height={320} src={imag1} alt="landing page image"/>
-         <div className={styles.subtitle}>
-            <h1 className={styles.ltext}>
-            Join the Robotics Revolution.
-            <br />
-            Learn, Create, Innovate with Us!
-          </h1>
-          <p className={styles.my6}>
-            Unlock Your Potential in Robotics with Personalized Tutoring
-          </p>
-          <NavLink to="/login">
-            <Button>Get Started </Button>
-          </NavLink>
-          
-         </div> 
-        </div>
-        <div className={styles.silverrobot}>
-          <Image width={480} height={640} src={silverrobot} alt="silver robot"/>
-        </div>
-        </div>
+            <Header/>
+            <div className={styles.gridcontent}>
+              <div  className={styles.landingContent} >
+                <Image width='90%' height='60%' src={imag1} alt="landing page image"/>
+                <div className={styles.subtitle}>
+                    <h1 className={styles.ltext}>
+                    Join the Robotics Revolution.
+                    <br />
+                    Learn, Create, Innovate with Us!
+                    </h1>
+                    <p className={styles.my6}>
+                    Unlock Your Potential in Robotics with Personalized Tutoring
+                    </p>
+                    <NavLink to="/login">
+                      <Button1>Get Started </Button1>
+                    </NavLink>          
+                </div> 
+              </div>
+              <div className={styles.silverrobot}>
+                <Image width='70%' height='84%' src={silverrobot} alt="silver robot"/>
+              </div>
+            </div>
         </section>
         <section id="about" className={styles.about} >
 
-  <div className="flex flex-col items-center text-center">
-    <h1 className="text-4xl font-bold">Who are we ?</h1>
-    <p className="w-2/3 min-w-[500px] text-3xl">
+  <div className={styles.pagedets}>
+    <h2 className={styles.titletext}>Who are we ?</h2>
+    <h3 className={styles.paragraph}>
     RoboLabs is an innovative online learning platform committed to inspiring individuals with 
 the skills and knowledge necessary to thrive in the exciting world of robotics programming. 
 Our mission is to make learning hands-on and fun, and we provide a holistic curriculum 
 that delves into various facets, from the art of robot design to the intricacies of programming 
 and control.
-    </p>
+    </h3>
   </div>
-  <div >
-    <h1 >Mission Statement</h1>
-    <p>
+  <div className={styles.pagedets}>
+    <h2 className={styles.titletext}>Mission Statement</h2>
+    <h3 className={styles.paragraph}>
     At RoboLabs, our primary mission is to ensure that robotics education is accessible to everyone. We've created a user-friendly platform that's easy to navigate, even if you don't have much experience with programming. Our courses are thoughtfully designed to be engaging, interactive, and enjoyable. They include a mix of video tutorials, hands-on exercises, and quizzes to help reinforce what you've learned. We're dedicated to making the process of learning about robotics both accessible and enjoyable for all.
-    </p>
+    </h3>
   </div>
-  <div>
-    <h1>Robolabs Training Tracks</h1>
+  <div className={styles.infocard}>
+    <h2 className={styles.titletext}>Robolabs Training Tracks</h2>
     <div className={styles.profilegrid}>
           {profiles.map((profile, index) => (
             <ProfileCard key={index} {...profile} />
@@ -82,8 +82,7 @@ and control.
   </div>
   </section>
   <section className={styles.testimonial}>
-  <div>
-    <h1>What Parents and Kids Say</h1>  
+  <h2 className={styles.titletext}>What Parents and Kids Say</h2>  
     <div className={styles.testcontainer}>
     <div className={styles.Testimonialgrid}>
             {recommendations.map((recommendation, index) => {
@@ -92,7 +91,7 @@ and control.
           </div>       
     </div> 
     
-  </div>
+
 </section>
 
 <Pagefooter/>

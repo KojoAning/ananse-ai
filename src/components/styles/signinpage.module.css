@@ -1,29 +1,39 @@
 .container{
     /* background-color: black; */
     display: flex;
-    height: 85vh;
-    align-items: center;
+    height: auto;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .leftcontent{
     /* background-color: green; */
-    height: 85vh;
-    width: 50vw;
+    height: auto;
+    width: 45vw;
     background-image: url('../assets/images/rectangle135.png');
        
     background-repeat: no-repeat;
-    background-size: 100% 110%;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .rightcontent{
     /* background-color: blue; */
     width: 50vw;
-    height: 85vh;
+    height: auto;
     
 }
 
 .image {
-    width: 100%; /* Set image width to 100% of the parent div */
-    height: 100%; /* Set image height to 100% of the parent div */
-    object-fit: cover; /* Ensures the image covers the entire space of the div */
-  }
+    width: 60vw; /* Set image width to 100% of the parent div */
+    height: 90%; /* Set image height to 100% of the parent div */
+}
+
+
+.image {
+    width: 50vw; /* Set image width to 100% of the parent div */
+    height: 60%; /* Set image height to 100% of the parent div */
+}

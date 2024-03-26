@@ -9,7 +9,7 @@ function Pagefooter() {
   return (
     <div className={styles.container}>
         <div className={styles.footerlogo}>
-            <Image src={image}></Image>
+            <Image src={image} width='70%' height='20%'></Image>
         </div>
         <div className={styles.testimonialgrid}>
             {divcontents.map((recommendation, index) => {

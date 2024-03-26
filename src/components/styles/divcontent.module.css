@@ -1,11 +1,11 @@
 .container {
-    background-color: blue;
+   
     
 }
 
 .titlelink {
     color: white;
-    font-size: 17px;
+    font-size: 1.2vw;
     font-weight: bold;
 }
 
@@ -14,13 +14,13 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 1.6vw;
     /* background-color: blue; */
   }
 
   .divcontentgrid {
     display: flex;
-    gap: 25px;
+    gap: 2.5vw;
     flex-direction: column;
     align-items: left;
     justify-content: center;
@@ -31,6 +31,7 @@
 .links {
     text-decoration: none;
     color: #F3A611;
+    font-size: 1.2vw;
 }
 
 .linkcontainer {

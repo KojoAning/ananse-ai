@@ -5,12 +5,15 @@ import { NavLink } from 'react-router-dom';
 import Button from './Button.js';
 import styles from './styles/login.module.css';
 import lock from './assets/images/lock.png'
-import person from './assets/images/person.png'
+import person from './assets/images/person.png';
+import { Image } from 'react-bootstrap';
+import Button2 from './button2.js';
 
 function Logincomponents() {
   return(
     <div className={styles.container}>
-        <img src={image}></img>
+   
+        <Image className={styles.logo} src={image} alt="logo" width='25%' height='25%' />
         <h1>Welcome to Robolabs</h1>
         <div className={styles.inputcontent}>
           <div className={styles.input2}><img className={styles.img} src={person}></img><input className={styles.input}  placeholder='Enter your Username'  type='text'></input></div>
@@ -18,9 +21,9 @@ function Logincomponents() {
         </div>
 
 <NavLink to="/dashboard">
-            <Button>Sign In </Button>
+            <Button2>Sign In </Button2>
           </NavLink>
-          <div><a>Dont have an account?</a><a href="/signup">Sign up</a></div>
+          <div className={styles.alt}><a>Dont have an account?</a><a href="/signup">Sign up</a></div>
         
     </div>
   )

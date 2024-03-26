@@ -7,9 +7,7 @@ import styles from './styles/Profilecard.module.css'; // Adjust the import based
 function ProfileCard({ name, img, description }) {
   return (
     <div className={styles.cardContainer}>
-      <div className={styles.image}>
-        <Image src={img} alt=""/>
-      </div>
+        <Image src={img} alt="" height="70%" width='100%'/>
       <div className={`${styles.cardContent} text-purple`}>
         <h1 className={styles.cardTitle}>{name}</h1>
         <p className={styles.cardDescription}>{description}</p>

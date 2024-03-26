@@ -30,7 +30,7 @@ function Dashboard() {
         <div className={styles.topdecoration}>
 
         <header className={styles.header}>
-          <Image className={styles.logo} src={logo} alt="logo" width={200} height={20} />
+          <Image className={styles.logo} src={logo} alt="logo" width='2%' height='2%' />
           <nav className={styles.nav}>
             <ul>
               {links.map((link, index) => (
@@ -76,8 +76,7 @@ function Dashboard() {
           </div>
 
           <div id="Featured" className="tabcontent" style={{ display: activeTab === 'Featured' ? 'block' : 'none' }}>
-            <h3>Section 1</h3>
-            <p>This is the content of section 1.</p>
+    
             <div>
             {data.length > 0 ? ( 
                 <div>

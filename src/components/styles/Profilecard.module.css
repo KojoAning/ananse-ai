@@ -1,17 +1,15 @@
 
 .cardContainer {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
+    width: 20vw;
     flex-direction: column; /* Stack items in a column */
     align-items: center; /* Center items horizontally */
-    border-radius: 15px; /* Add border-radius for rounded corners */
+    border-radius: 1.5vw; /* Add border-radius for rounded corners */
     overflow: hidden; /* Hide overflow to keep the image within the container */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
   }
-  .intermediatesCard {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: scale(1.25);
-  }
+ 
 
 
   .imageContainer {
@@ -19,19 +17,26 @@
   }
   
   .image {
-    object-fit: cover; 
+    /* object-fit: cover;  */
+    height: 30%;
   }
   
   
   .cardContent {
     width: 100%;
-    padding: 6px;
-    margin: auto;
+    padding-top: 1.2vw;
+    /* background-color: rebeccapurple; */
+    /* margin: auto; */
     color: purple;
+    font-size: 1.1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .cardTitle {
-    font-size: 2rem;
+    font-size: 1.6vw;
     font-weight: bold;
   }
   

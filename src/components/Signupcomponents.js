@@ -6,11 +6,12 @@ import Button from './Button.js';
 import styles from './styles/login.module.css';
 import lock from './assets/images/lock.png'
 import person from './assets/images/person.png'
+import Button2 from './button2.js';
 
 function Signupcomponents() {
   return(
     <div className={styles.container}>
-        <img src={image}></img>
+        <img src={image}  width='25%' height='25%'></img>
         <h1>Welcome to Robolabs</h1>
         <div className={styles.inputcontent}>
           <div className={styles.input2}><img className={styles.img} src={person}></img><input className={styles.input}  placeholder='Enter your Username'  type='text'></input></div>
@@ -19,7 +20,7 @@ function Signupcomponents() {
         </div>
 
 <NavLink to="/login">
-            <Button>Sign Up </Button>
+            <Button2>Sign Up </Button2>
           </NavLink>
          
         
